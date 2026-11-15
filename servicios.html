@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios y Precios | NexoWeb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo" aria-label="NexoWeb Inicio">
+                <svg width="38" height="38" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 82V22L78 78V18" stroke="#0B3C5D" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="22" cy="82" r="12" fill="#1BA9C7"/>
+                    <circle cx="78" cy="18" r="12" fill="#1BA9C7"/>
+                </svg>
+                <span class="brand-text"><strong>nexo</strong><span>web</span></span>
+            </a>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html" class="active">Servicios y Precios</a></li>
+                    <li><a href="contacto.html" class="btn-nav">Cotizar Proyecto</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="badge">Inversión Transparente</span>
+            <h1>Soluciones web a la medida de tu negocio</h1>
+            <p>Pago único por desarrollo (50% anticipo y 50% contra entrega). Todos nuestros sitios incluyen diseño responsivo, garantía de 30 días y código limpio.</p>
+        </div>
+    </section>
+
+    <!-- Detalle de los 3 Paquetes -->
+    <section class="section-white">
+        <div class="container service-detail-list">
+
+            <!-- Línea 1 -->
+            <div id="esencial" class="service-detail-card">
+                <div class="sd-info">
+                    <span class="sd-tag">Plazo: 7 a 10 días hábiles</span>
+                    <h2>1. Sitio Web Esencial (Landing Page)</h2>
+                    <p>Una página de una sola sección altamente efectiva, pensada para captar clientes locales y dirigirlos directo a tu WhatsApp. Ideal para consultorios médicos, despachos contables, abogados, talleres y profesionistas independientes.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Diseño personalizado (hasta 6 bloques de contenido)</li>
+                        <li><i class="fas fa-check"></i> Galería de servicios, testimonios y preguntas frecuentes</li>
+                        <li><i class="fas fa-check"></i> Botón flotante directo a WhatsApp y formulario</li>
+                        <li><i class="fas fa-check"></i> Optimización SEO local básica y publicación en dominio</li>
+                    </ul>
+                </div>
+                <div class="sd-pricing">
+                    <span class="price-label">Inversión única</span>
+                    <div class="price-amount">$4,000 <span>MXN</span></div>
+                    <span class="price-tax">+ IVA (Facturable CFDI)</span>
+                    <a href="contacto.html?plan=esencial" class="btn btn-primary btn-block">Contratar Esencial</a>
+                </div>
+            </div>
+
+            <!-- Línea 2 -->
+            <div id="menu-qr" class="service-detail-card featured-border">
+                <div class="sd-info">
+                    <span class="sd-tag popular-bg">Más Solicitado • Plazo: 10 a 12 días hábiles</span>
+                    <h2>2. Catálogo o Menú Digital QR</h2>
+                    <p>Elimina los gastos de reimpresión cada vez que cambian tus precios. Tus clientes escanean el código desde su mesa o mostrador y navegan un menú rápido, visual y ordenado por categorías desde su celular.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Catálogo web programado a la medida con fotos y precios</li>
+                        <li><i class="fas fa-check"></i> <strong>4 placas físicas QR</strong> en acrílico o vinil (10x10 cm) incluidas</li>
+                        <li><i class="fas fa-check"></i> Botón de pedido o reserva rápida por WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Archivo digital del QR y guía de actualización</li>
+                    </ul>
+                </div>
+                <div class="sd-pricing">
+                    <span class="price-label">Inversión única</span>
+                    <div class="price-amount">$5,000 <span>MXN</span></div>
+                    <span class="price-tax">+ IVA (Facturable CFDI)</span>
+                    <a href="contacto.html?plan=menu-qr" class="btn btn-primary btn-block">Contratar Menú QR</a>
+                </div>
+            </div>
+
+            <!-- Línea 3 -->
+            <div id="corporativo" class="service-detail-card">
+                <div class="sd-info">
+                    <span class="sd-tag">Plazo: 20 a 25 días hábiles</span>
+                    <h2>3. Sitio Web Corporativo Multipágina</h2>
+                    <p>La solución integral para empresas formales, escuelas, constructoras, clínicas y distribuidoras que necesitan proyectar solidez institucional y detallar múltiples líneas de negocio.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Arquitectura de varias páginas (Inicio, Nosotros, Servicios, Contacto)</li>
+                        <li><i class="fas fa-check"></i> Mapa interactivo de ubicación y formularios avanzados</li>
+                        <li><i class="fas fa-check"></i> Galería de proyectos o casos de éxito</li>
+                        <li><i class="fas fa-check"></i> SEO estructurado por cada página + capacitación al personal</li>
+                    </ul>
+                </div>
+                <div class="sd-pricing">
+                    <span class="price-label">Inversión única</span>
+                    <div class="price-amount">$9,000 <span>MXN</span></div>
+                    <span class="price-tax">+ IVA (Facturable CFDI)</span>
+                    <a href="contacto.html?plan=corporativo" class="btn btn-primary btn-block">Contratar Corporativo</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Terminal de Comandos / Despliegue -->
+    <section class="section-light">
+        <div class="container">
+            <div class="section-title">
+                <span class="eyebrow">Despliegue Profesional</span>
+                <h2>Del código fuente a tu dominio en días hábiles</h2>
+                <p>Cada proyecto pasa por un riguroso pipeline de pruebas de diseño y optimización antes de entregarse al cliente.</p>
+            </div>
+            
+            <div class="terminal-box">
+                <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="mockup-url">bash — nexoweb-cli v2.7</span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="t-prompt">$</span> nexoweb init --client "Negocio Local Comalcalco"</p>
+                    <p class="t-output">✔ Brief analizado y wireframes aprobados (Etapa 1 y 3).</p>
+                    <p><span class="t-prompt">$</span> npm run build:frontend</p>
+                    <p class="t-output">✔ Minificando HTML, CSS y JS nativos... [Optimizado a 780 KB]</p>
+                    <p><span class="t-prompt">$</span> nexoweb deploy --ssl --domain tunegocio.com.mx</p>
+                    <p class="t-success">✔ ¡Sitio web publicado con éxito y alta en Google Business Profile completada!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan de Mantenimiento -->
+    <section id="mantenimiento" class="section-dark">
+        <div class="container maintenance-box">
+            <div>
+                <span class="badge">Continuidad Operativa</span>
+                <h2>Plan de Mantenimiento Mensual o Anual</h2>
+                <p>Olvídate de los aspectos técnicos. Nosotros nos encargamos de que tu sitio siga en línea, seguro y actualizado todos los meses.</p>
+                <div class="maint-features">
+                    <span><i class="fas fa-server"></i> Hosting de alta velocidad</span>
+                    <span><i class="fas fa-globe"></i> Renovación de dominio (.com / .mx)</span>
+                    <span><i class="fas fa-lock"></i> Certificado de seguridad SSL</span>
+                    <span><i class="fas fa-sync-alt"></i> 1 actualización de contenido al mes</span>
+                    <span><i class="fas fa-database"></i> Respaldos semanales</span>
+                    <span><i class="fas fa-headset"></i> Soporte prioritario WhatsApp</span>
+                </div>
+            </div>
+            <div class="maint-price-card">
+                <h3>$400 <span>MXN / mes</span></h3>
+                <p class="or-text">o paga anual y obtén <strong>2 meses gratis</strong>:</p>
+                <div class="annual-tag">$4,000 MXN / año</div>
+                <small>+ IVA • Sin plazos forzosos</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promociones Vigentes -->
+    <section class="section-light">
+        <div class="container">
+            <div class="section-title">
+                <span class="eyebrow">Beneficios Comerciales</span>
+                <h2>Descuentos y Paquetes Especiales</h2>
+            </div>
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <i class="fas fa-star"></i>
+                    <h4>10% Descuento Lanzamiento</h4>
+                    <p>Para nuestros primeros 10 clientes a cambio de un testimonio real para nuestro portafolio.</p>
+                </div>
+                <div class="promo-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h4>10% en Paquete Combinado</h4>
+                    <p>Al contratar dos líneas de servicio juntas (por ejemplo: Sitio Web Esencial + Menú QR).</p>
+                </div>
+                <div class="promo-card">
+                    <i class="fas fa-users"></i>
+                    <h4>5% Programa de Referidos</h4>
+                    <p>Descuento directo tanto para el cliente que nos recomienda como para el negocio recomendado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="section-white">
+        <div class="container faq-container">
+            <div class="section-title">
+                <span class="eyebrow">Resolvemos tus dudas</span>
+                <h2>Preguntas Frecuentes</h2>
+                <p>Todo lo que necesitas saber sobre nuestro proceso de trabajo, pagos y garantías.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-card">
+                    <h3><i class="fas fa-credit-card"></i> ¿Cómo funciona la forma de pago?</h3>
+                    <p>Trabajamos con <strong>50% de anticipo</strong> al firmar el contrato de servicios para iniciar el diseño y desarrollo, y el <strong>50% restante contra entrega</strong> al publicar tu sitio web. Todos nuestros precios son más IVA (16%) y emitimos factura electrónica (CFDI).</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3><i class="fas fa-code"></i> ¿El código fuente y el sitio son realmente míos?</h3>
+                    <p>Sí, al 100%. Al liquidar el proyecto te entregamos una carpeta digital (.zip) con todo el código fuente en HTML, CSS y JavaScript, tus imágenes optimizadas y una guía de uso en PDF. No quedas atado a rentas permanentes ni plataformas cerradas.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3><i class="fas fa-sync-alt"></i> ¿Qué pasa si necesito cambios durante el desarrollo?</h3>
+                    <p>Todos nuestros proyectos incluyen hasta <strong>3 rondas de revisión y ajustes sin costo adicional</strong> durante el desarrollo, además de <strong>30 días naturales de garantía</strong> después de la entrega para corregir cualquier detalle técnico.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3><i class="fas fa-server"></i> ¿Es obligatorio contratar el plan de mantenimiento?</h3>
+                    <p>No es obligatorio, pero es muy recomendable para tu comodidad. Por <strong>$400 MXN al mes</strong> (o $4,000 MXN al año con 2 meses gratis) cubrimos el hosting, renovación de dominio (.com o .mx), certificado SSL, respaldos semanales y 1 actualización de contenido al mes (precios, fotos o textos).</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3><i class="fas fa-qrcode"></i> ¿Qué incluye exactamente el paquete de Menú o Catálogo QR?</h3>
+                    <p>Además de programar tu menú interactivo navegable desde el celular, te entregamos una caja con <strong>4 placas físicas QR</strong> (en acrílico o vinil de 10x10 cm a color) listas para colocar en mesas o mostradores, el archivo digital del QR y una guía de uso.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3><i class="fas fa-map-marked-alt"></i> ¿Atienden negocios fuera de Comalcalco?</h3>
+                    <p>¡Por supuesto! Realizamos visitas presenciales y asesoría directa en <strong>Comalcalco</strong> y municipios vecinos de la región Chontalpa (Paraíso, Cunduacán, Jalpa de Méndez y Cárdenas), y atendemos por videollamada a clientes de todo Tabasco y México.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/529330000000" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="brand-logo footer-logo">
+                    <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 82V22L78 78V18" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="22" cy="82" r="12" fill="#1BA9C7"/>
+                        <circle cx="78" cy="18" r="12" fill="#1BA9C7"/>
+                    </svg>
+                    <span class="brand-text light"><strong>nexo</strong><span>web</span></span>
+                </a>
+                <p>"Tu negocio, conectado." Agencia de desarrollo web a la medida en Comalcalco, Tabasco.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios y Precios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="servicios.html#esencial">Sitio Web Esencial</a></li>
+                    <li><a href="servicios.html#menu-qr">Catálogo / Menú QR</a></li>
+                    <li><a href="servicios.html#corporativo">Sitio Web Corporativo</a></li>
+                    <li><a href="servicios.html#mantenimiento">Plan de Mantenimiento</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto Local</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Comalcalco, Tabasco, México</p>
+                <p><i class="fas fa-clock"></i> Lun - Vie: 9:00 a 18:00 hrs</p>
+                <p><i class="fas fa-envelope"></i> contacto@nexoweb.mx</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2027 NexoWeb Soluciones Digitales, S.A.S. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

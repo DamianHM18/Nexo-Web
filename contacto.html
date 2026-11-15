@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Cotizador | NexoWeb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo" aria-label="NexoWeb Inicio">
+                <svg width="38" height="38" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 82V22L78 78V18" stroke="#0B3C5D" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="22" cy="82" r="12" fill="#1BA9C7"/>
+                    <circle cx="78" cy="18" r="12" fill="#1BA9C7"/>
+                </svg>
+                <span class="brand-text"><strong>nexo</strong><span>web</span></span>
+            </a>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios y Precios</a></li>
+                    <li><a href="contacto.html" class="btn-nav active">Cotizar Proyecto</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="badge">Hablemos hoy</span>
+            <h1>Cotiza tu proyecto en segundos</h1>
+            <p>Calcula tu inversión estimada y agenda una reunión presencial en Comalcalco o por videollamada.</p>
+        </div>
+    </section>
+
+    <section class="section-white">
+        <div class="container contact-page-grid">
+
+            <!-- Formulario de Diagnóstico y Cotizador -->
+            <div class="form-container">
+                <h2>Solicitud de Cotización y Brief</h2>
+                <p class="form-desc">Completa tus datos y recibe una propuesta visual preliminar sin compromiso.</p>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Tu Nombre Completo *</label>
+                            <input type="text" id="nombre" placeholder="Ej. Carlos Méndez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="negocio">Nombre de tu Negocio *</label>
+                            <input type="text" id="negocio" placeholder="Ej. Cafetería La Chontalpa" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">WhatsApp / Teléfono *</label>
+                            <input type="tel" id="telefono" placeholder="Ej. 933 123 4567" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" placeholder="correo@tunegocio.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicio-interes">Solución Web de Interés *</label>
+                        <select id="servicio-interes">
+                            <option value="4000" data-name="Sitio Web Esencial">Sitio Web Esencial (Landing Page) - $4,000 MXN</option>
+                            <option value="5000" data-name="Catálogo o Menú Digital QR">Catálogo o Menú Digital QR (con 4 placas) - $5,000 MXN</option>
+                            <option value="9000" data-name="Sitio Web Corporativo">Sitio Web Corporativo Multipágina - $9,000 MXN</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="mantenimiento-select">Plan de Mantenimiento</label>
+                            <select id="mantenimiento-select">
+                                <option value="0">Sin plan por ahora</option>
+                                <option value="400">Mensual ($400 MXN/mes)</option>
+                                <option value="4000">Anual ($4,000 MXN - 2 meses gratis)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="descuento-select">Promoción Aplicable</label>
+                            <select id="descuento-select">
+                                <option value="0">Precio regular</option>
+                                <option value="0.10">Descuento Lanzamiento (10%)</option>
+                                <option value="0.05">Código de Referido (5%)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Caja de Cálculo Automático -->
+                    <div class="quote-summary">
+                        <div class="quote-line">
+                            <span>Desarrollo web (Pago único):</span>
+                            <strong id="calc-dev">$4,000.00 MXN</strong>
+                        </div>
+                        <div class="quote-line">
+                            <span>Mantenimiento seleccionado:</span>
+                            <strong id="calc-maint">$0.00 MXN</strong>
+                        </div>
+                        <div class="quote-line total">
+                            <span>Anticipo inicial (50% desarrollo):</span>
+                            <strong id="calc-advance">$2,000.00 MXN + IVA</strong>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Cuéntanos sobre tu proyecto o giro</label>
+                        <textarea id="mensaje" rows="4" placeholder="¿Qué servicios o productos vendes? ¿Ya cuentas con logotipo o fotografías?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Solicitud de Proyecto</button>
+                </form>
+            </div>
+
+            <!-- Información de Contacto y Mapa -->
+            <div class="contact-sidebar">
+                <div class="info-card">
+                    <h3>Información Directa</h3>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <p>Comalcalco, Tabasco, México.<br><small>Atención presencial previa cita y visitas a negocios locales.</small></p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp Comercial</strong>
+                                <p>+52 (933) 000-0000<br><small>Respuesta en menos de 24 horas hábiles.</small></p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Correo Electrónico</strong>
+                                <p>contacto@nexoweb.mx</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Horario de Atención</strong>
+                                <p>Lunes a Viernes: 9:00 a 18:00 hrs</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mapa Interactivo de Comalcalco -->
+                <div class="map-box">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30338.82865884509!2d-93.2421276!3d18.2647727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ee8f0000000001%3A0x4a2961238231173b!2sComalcalco%2C%20Tab.!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" 
+                        width="100%" 
+                        height="260" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa de Comalcalco, Tabasco">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <a href="https://wa.me/529330000000" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="brand-logo footer-logo">
+                    <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 82V22L78 78V18" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="22" cy="82" r="12" fill="#1BA9C7"/>
+                        <circle cx="78" cy="18" r="12" fill="#1BA9C7"/>
+                    </svg>
+                    <span class="brand-text light"><strong>nexo</strong><span>web</span></span>
+                </a>
+                <p>"Tu negocio, conectado." Agencia de desarrollo web a la medida en Comalcalco, Tabasco.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios y Precios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="servicios.html#esencial">Sitio Web Esencial</a></li>
+                    <li><a href="servicios.html#menu-qr">Catálogo / Menú QR</a></li>
+                    <li><a href="servicios.html#corporativo">Sitio Web Corporativo</a></li>
+                    <li><a href="servicios.html#mantenimiento">Plan de Mantenimiento</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto Local</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Comalcalco, Tabasco, México</p>
+                <p><i class="fas fa-clock"></i> Lun - Vie: 9:00 a 18:00 hrs</p>
+                <p><i class="fas fa-envelope"></i> contacto@nexoweb.mx</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2027 NexoWeb Soluciones Digitales, S.A.S. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
